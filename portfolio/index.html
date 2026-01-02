@@ -1527,7 +1527,7 @@ As a compact team of two with deep computer science roots, we ensure reliable, p
     </footer>
 
     <!-- Service Data -->
-    <script>
+    <!-- <script>
         const servicesData = {
             1: {
                 title: "Website & Web App Development",
@@ -1614,7 +1614,7 @@ As a compact team of two with deep computer science roots, we ensure reliable, p
                 }
             }
         };
-    </script>
+    </script> -->
 
     <script>
         // DOM Elements
@@ -1715,63 +1715,63 @@ As a compact team of two with deep computer science roots, we ensure reliable, p
             });
         }
 
-        // Service Detail Modal
-        function openServiceModal(serviceId) {
-            const service = servicesData[serviceId];
+        // Service Detail Modalfsds
+        // function openServiceModal(serviceId) {
+        //     const service = servicesData[serviceId];
             
-            const modalHTML = `
-                <span class="service-number">0${serviceId}</span>
-                <div class="service-content">
-                    <h3>${service.title}</h3>
-                    <p>${service.description}</p>
+        //     const modalHTML = `
+        //         <span class="service-number">0${serviceId}</span>
+        //         <div class="service-content">
+        //             <h3>${service.title}</h3>
+        //             <p>${service.description}</p>
                     
-                    <div class="service-features">
-                        ${service.features.map(feature => `
-                            <div class="feature-item">
-                                <div class="feature-icon">
-                                    <i class="fas ${feature.icon}"></i>
-                                </div>
-                                <div>
-                                    <h4>${feature.title}</h4>
-                                    <p>${feature.description}</p>
-                                </div>
-                            </div>
-                        `).join('')}
-                    </div>
+        //             <div class="service-features">
+        //                 ${service.features.map(feature => `
+        //                     <div class="feature-item">
+        //                         <div class="feature-icon">
+        //                             <i class="fas ${feature.icon}"></i>
+        //                         </div>
+        //                         <div>
+        //                             <h4>${feature.title}</h4>
+        //                             <p>${feature.description}</p>
+        //                         </div>
+        //                     </div>
+        //                 `).join('')}
+        //             </div>
                     
-                    <div class="service-demo">
-                        <div class="demo-header">
-                            <div>
-                                <h4>${service.demo.title}</h4>
-                                <p>${service.demo.description}</p>
-                            </div>
-                            <a href="${service.demo.liveDemo}" class="btn-text">
-                                <span>View Live Demo</span>
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                        <div class="demo-preview">
-                            <div class="demo-image"></div>
-                            <div class="demo-info">
-                                <h5>${service.demo.previewTitle}</h5>
-                                <p>${service.demo.previewDescription}</p>
-                            </div>
-                        </div>
-                    </div>
+        //             <div class="service-demo">
+        //                 <div class="demo-header">
+        //                     <div>
+        //                         <h4>${service.demo.title}</h4>
+        //                         <p>${service.demo.description}</p>
+        //                     </div>
+        //                     <a href="${service.demo.liveDemo}" class="btn-text">
+        //                         <span>View Live Demo</span>
+        //                         <i class="fas fa-external-link-alt"></i>
+        //                     </a>
+        //                 </div>
+        //                 <div class="demo-preview">
+        //                     <div class="demo-image"></div>
+        //                     <div class="demo-info">
+        //                         <h5>${service.demo.previewTitle}</h5>
+        //                         <p>${service.demo.previewDescription}</p>
+        //                     </div>
+        //                 </div>
+        //             </div>
                     
-                    <div style="margin-top: 40px;">
-                        <a href="#contact" class="btn btn-book" onclick="closeServiceModal()">
-                            <span>Book This Service</span>
-                            <i class="fas fa-calendar-check"></i>
-                        </a>
-                    </div>
-                </div>
-            `;
+        //             <div style="margin-top: 40px;">
+        //                 <a href="#contact" class="btn btn-book" onclick="closeServiceModal()">
+        //                     <span>Book This Service</span>
+        //                     <i class="fas fa-calendar-check"></i>
+        //                 </a>
+        //             </div>
+        //         </div>
+        //     `;
             
-            serviceDetailContent.innerHTML = modalHTML;
-            serviceDetailModal.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
+        //     serviceDetailContent.innerHTML = modalHTML;
+        //     serviceDetailModal.classList.add('active');
+        //     document.body.style.overflow = 'hidden';
+        // }
 
         function closeServiceModal() {
             serviceDetailModal.classList.remove('active');
